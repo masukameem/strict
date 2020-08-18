@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #999999;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.bg-color {
+    background-color: #f9f9f9;
+}
+
+/******************** Header ********************/
+nav {
+    padding-top: 26px !important;
+    padding-bottom: 26px !important;
+}
+
+.navbar-brand {
+    padding-left: 30px;
+}
+
+.nav-link {
+    font-size: 16px;
+    color: #2d3950;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0 !important;
+    margin-right: 25px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #15a4fa;
+}
+
+/******************** Banner Section ********************/
+.banner-section {
+    background-image: url(../images/banner-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-section .row {
+    min-height: 89vh;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 120px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 9px;
+}
+
+.banner-section span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #15a4fa;
+}
+
+.banner-section p {
+    font-size: 20px;
+    margin-top: 35px;
+    margin-bottom: 64px;
+}
+
+.btn {
+    color: #ffffff;
+    border: 1px solid #15a4fa;
+    font-size: 18px;
+    padding: 13px 35px;
+}
+
+.btn:hover {
+    color: #ffffff;
+    background-color: #15a4fa;
+}
+
+.banner-section a {
+    color: #ffffff;
+    display: block;
+    transform: translateY(-80px);
+    -webkit-transform: translateY(-80px);
+    -moz-transform: translateY(-80px);
+    animation-name: Arrow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes Arrow {
+    0% {
+        transform: translateY(-80px);
+        -webkit-transform: translateY(-80px);
+        -moz-transform: translateY(-80px);
+    }
+
+    100% {
+        transform: translateY(-60px);
+        -webkit-transform: translateY(-60px);
+        -moz-transform: translateY(-60px);
+    }
+}
+
+.banner-section a:hover {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+/******************** About Section ********************/
+h2 {
+    font-size: 40px;
+    padding: 71px 0px 6px;
+    color: #2d3950;
+}
+
+.about-section p {
+    font-size: 20px;
+    padding: 6px 0px 105px;
+    line-height: 1.6;
+}
+
+/******************** Feature Section ********************/
+.feature-section {
+    padding: 50px 0px;
+}
+
+.feature {
+    width: 85%;
+    margin: auto auto -3px;
+}
+
+.feature span {
+    font-size: 40px;
+    color: #ffffff;
+    background: #48baff;
+    background: -moz-linear-gradient(left, #48baff 50%, #5fc3ff 50%);
+    background: -webkit-linear-gradient(left, #48baff 50%, #5fc3ff 50%);
+    background: linear-gradient(to right, #48baff 50%, #5fc3ff 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#48baff', endColorstr='#5fc3ff', GradientType=1);
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
+    line-height: 100px;
+}
+
+h3 {
+    font-size: 22px;
+    color: #2d3950;
+    padding-top: 28px;
+    padding-bottom: 7px;
+}
+
+/******************** Gallery Section ********************/
+.gallery-section {
+    padding-bottom: 86px;
+}
+
+.gallery-section p {
+    color: #909090;
+    padding-bottom: 63px;
+}
+
+.gallery {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.gallery::before {
+    content: "";
+    background-color: rgb(21, 164, 250, 0);
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    bottom: 0;
+    left: 0;
+    transition: 0.4s;
+}
+
+.gallery:hover::before {
+    content: "";
+    background-color: rgb(21, 164, 250, 0.9);
+    width: 100%;
+    height: 100%;
+}
+
+.gallery ul {
+    position: absolute;
+    bottom: 45%;
+    right: 50%;
+    transform: translate(50%, 45%);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.gallery:hover ul {
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    opacity: 1;
+}
+
+.gallery ul li a {
+    display: block;
+    color: #ffffff;
+    font-size: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    margin: 0 5px;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+}
+
+/******************** Contact Section ********************/
+.contact-section {
+    background: url(../images/contact-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.contact-section::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(45, 57, 80, 0.9);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.contact-section h2 {
+    color: #ffffff;
+    margin-top: -7px;
+}
+
+form {
+    padding-top: 33px;
+    padding-bottom: 110px;
+    width: 87%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    background-color: transparent;
+    font-size: 15px;
+    padding: 30px 20px;
+    border-color: #999999;
+}
+
+textarea {
+    padding-top: 19px !important;
+}
+
+input[type=checkbox] {
+    width: 19px;
+    height: 19px;
+    margin-right: 15px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #99a0a9;
+    border-radius: 3px;
+}
+
+.check-li {
+    align-items: center;
+    display: flex;
+}
+
+label {
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+input[type="submit"] {
+    padding: 9px 50px;
+}
+
+/******************** Footer ********************/
+footer {
+    padding: 25px 0px;
+}
+
+footer p {
+    margin: 0px;
+}
+
+footer a {
+    background-color: #15a4fa;
+    color: #ffffff;
+    font-size: 15px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #15a4fa;
+    line-height: 40px;
+    display: block;
+    text-align: center;
+    border-radius: 3px;
+    margin-left: 5px;
+    transition: 0.4s;
+}
+
+footer a:hover {
+    background-color: #ffffff;
+    color: #15a4fa;
+}
